@@ -1,0 +1,4 @@
+mixin btn(text, light)
+	- var classes = ['btn']
+	- if (light) {classes.push('btn--light')}
+	div(class=`${classes.join(' ')}`) #{text}

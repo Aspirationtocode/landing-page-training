@@ -1,0 +1,13 @@
+include ../header-menu/header-menu
+include ../header-slider/header-slider
+include ../btn/btn
+mixin header()
+	.header
+		.header__top-line
+			.header-logo
+			.header-menu-burger
+			+header-menu()
+		+header-slider()
+		.header__buttons
+				+btn('get started now')
+				+btn('learn more', true)
